@@ -18,19 +18,19 @@ public class Teste {
 		
 		Produto produto3 = new Produto();
 		produto3.setId(3L);
-		produto3.setNome("Modulo Angular 8");
+		produto3.setNome(" Modulo Angular 8");
 		produto3.setValor(BigDecimal.valueOf(197));
 
 		Produto produto4 = new Produto();
 		produto4.setId(4L);
-		produto4.setNome("Modulo Angular 8");
+		produto4.setNome(" Modulos API REST");
 		produto4.setValor(BigDecimal.valueOf(250));
 		Venda venda = new Venda();
 		
-		venda.setDescricaoVenda("Venda Curso Formação Java");
-		venda.setEnderecoEntrega("Entrega pelo E-mail");
+		venda.setDescricaoVenda(" Venda Curso Formação Java");
+		venda.setEnderecoEntrega(" Entrega pelo E-mail");
 		venda.setId(10L);
-		venda.setNomeCliente("Natã Moreira");
+		venda.setNomeCliente(" Natã Moreira");
 		//venda.setValorTotal(BigDecimal.valueOf(197.00));
 		
 		venda.getListProdutos().add(produto1);
@@ -38,7 +38,7 @@ public class Teste {
 		venda.addProduto(produto3);/*Posso fazer validações antes de adicionar na lista*/
 		venda.addProduto(produto4);
 	
-		
+		System.out.println("Descrição da venda: "+venda);
 		System.out.println("Valor da variável total Venda: " + venda.getValorTotal());
 	}
 
